@@ -15,38 +15,36 @@ struct ContactsView: View {
     var body: some View {
         NavigationStack(path: $contactPath) {
             ZStack {
-                Color.backgroundWB.ignoresSafeArea()
+                Color.backgroundWB
+                    .edgesIgnoringSafeArea(.all)
                 VStack {
                     ContactsSearchBarView(contactSearch: $contactSearch)
-                    
-                        .body.padding(.top, 16)
-                        
-                        
-                    
+                        .padding(.top, 16)
                     
                     List {
                         
+                    }
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            NavBarCustomName(titleNavBar: "Контакты")
+                                .padding(.leading, 12)
+                        }
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            NavigationLink(destination: NewContactView()) {
+                                Image(systemName: "plus")
+                                    .renderingMode(.template)
+                                    .foregroundStyle(.mainTextWB)
+                                    .bold()
+                                    .padding(.trailing, 12)
+                            }
+                        }
                     }
                     .navigationDestination(for: Contact.self) { contact in
                         PersonalContactView(contact: contact)
                     }
                     .listStyle(PlainListStyle())
                     .background(Color.backgroundWB)
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarLeading) {
-                            NavBarCustomName(titleNavBar: "Контакты")
-                                .padding(.leading, 24)
-                        }
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            NavigationLink(destination: NewContactView()) {
-                                Image(systemName: "plus").renderingMode(.template)
-                                    .foregroundStyle(.backgroundWB)
-                                    .bold()
-                                    .padding(.trailing, 24)
-                            }
-                        }
-                    }
                 }
                 .padding(.horizontal, 24)
             }

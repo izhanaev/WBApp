@@ -5,7 +5,7 @@
 //  Created by Ильяс Жанаев on 20.06.2024.
 //
 
-import SwiftUI
+import Foundation
 
 struct Contact: Hashable, Identifiable {
     let id = UUID()

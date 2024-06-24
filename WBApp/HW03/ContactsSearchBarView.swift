@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContactsSearchBarView {
+struct ContactsSearchBarView: View {
     
     @Binding var contactSearch: String
     
@@ -30,5 +30,5 @@ struct ContactsSearchBarView {
 }
 
 #Preview {
-    ContactsView()
+    ContactsSearchBarView(contactSearch: .constant(""))
 }
