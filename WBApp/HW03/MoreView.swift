@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MoreView.swift
 //  WBApp
 //
 //  Created by Ильяс Жанаев on 20.06.2024.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MoreView: View {
     var body: some View {
-        Onboarding()
+        Text("...").font(.system(size: 200))
     }
 }
 
 #Preview {
-    Onboarding()
+    MoreView()
 }

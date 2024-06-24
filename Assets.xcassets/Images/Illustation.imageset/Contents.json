@@ -17,6 +17,7 @@
       "scale" : "1x"
     },
     {
+      "filename" : "Illustration.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -27,10 +28,12 @@
           "value" : "dark"
         }
       ],
+      "filename" : "Illustration-3.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Illustration-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -41,6 +44,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "Illustration-4.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
