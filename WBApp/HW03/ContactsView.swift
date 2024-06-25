@@ -13,7 +13,7 @@ struct ContactsView: View {
     @State var contactPath = [Contact]()
     
     var body: some View {
-        NavigationStack(path: $contactPath) {
+        NavigationView {
             ZStack {
                 Color.backgroundWB
                     .edgesIgnoringSafeArea(.all)
@@ -21,10 +21,8 @@ struct ContactsView: View {
                     ContactsSearchBarView(contactSearch: $contactSearch)
                         .padding(.top, 16)
                     
-                    List {
+                    ContactsListView(contactPath: $contactPath)
                         
-                    }
-                    .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarLeading) {
                             NavBarCustomName(titleNavBar: "Контакты")
@@ -37,6 +35,7 @@ struct ContactsView: View {
                                     .foregroundStyle(.mainTextWB)
                                     .bold()
                                     .padding(.trailing, 12)
+                                
                             }
                         }
                     }
@@ -55,3 +54,9 @@ struct ContactsView: View {
 #Preview {
     ContactsView()
 }
+
+
+
+
+
+

@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct NewContactView: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
-        Text("abc")
+        ZStack {
+            Color.backgroundWB
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Image("Illustation")
+                .navigationBarBackButtonHidden()
+                .toolbar {
+                    ToolbarItemGroup(placement: .topBarLeading) {
+                        Button(action: {
+                            self.presentationMode.wrappedValue.dismiss()
+                        }) {
+                            NavBarCustomButton()
+                        }
+                        NavBarCustomName(titleNavBar: "Новый контакт")
+                    }
+                }
+            }
+            
+        }
     }
 }
 

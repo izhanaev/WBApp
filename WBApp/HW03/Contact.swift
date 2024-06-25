@@ -8,11 +8,12 @@
 import Foundation
 
 struct Contact: Hashable, Identifiable {
-    let id = UUID()
+    let id: Int
     let name: String
-    let surname: String?
+    let surname: String
     let avatar: String?
     let status: Bool
-    let story: String?
-    let lastSeen: String
+    let story: Bool
+    let lastSeen: Date
+    let phoneNumber: String
 }

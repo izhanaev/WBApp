@@ -7,19 +7,33 @@
 
 import SwiftUI
 
-struct ContactsListView {
+struct ContactsListView: View {
     @Binding var contactPath: [Contact]
-    let contacts: [Contact] = [
-        Contact(name: "Иван", surname: "Иванов", avatar: nil, status: true, story: "История 1", lastSeen: "1 минута назад"),
-        Contact(name: "Петр1", surname: "Петров", avatar: nil, status: false, story: "История 2", lastSeen: "5 минут назад"),
-        Contact(name: "Петр2", surname: "Петров", avatar: nil, status: false, story: "История 2", lastSeen: "5 минут назад"),
-        Contact(name: "Петр3", surname: "Петров", avatar: nil, status: false, story: "История 2", lastSeen: "5 минут назад"),
-        Contact(name: "Петр4", surname: "Петров", avatar: nil, status: false, story: "История 2", lastSeen: "5 минут назад")
+    private let contacts: [Contact] = [
+        .init(id: 1, name: "Анастасия", surname: "Иванова", avatar: "Person1", status: false, story: false, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"),
+        .init(id: 2, name: "Петя", surname: "", avatar: "Person2", status: true, story: false, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"),
+        .init(id: 3, name: "Маман", surname: "", avatar: "Person3", status: false, story: true, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"),
+        .init(id: 4, name: "Арбуз", surname: "Дыня", avatar: "Person4", status: true, story: false, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"),
+        .init(id: 5, name: "Иван", surname: "Иванов", avatar: nil, status: true, story: false, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"),
+        .init(id: 6, name: "Лиса", surname: "Алиса", avatar: nil, status: false, story: true, lastSeen: Date(), phoneNumber: "+7 800 555-35-35")
     ]
     
     var body: some View {
-        VStack {
-            
+        List(contacts) { contact in
+            Button {
+                contactPath.append(contact)
+            } label: {
+                ContactCellView(contact: contact)
+            }
+//            NavigationLink(destination: PersonalContactView(contact: contact)
+//            ) { }
         }
+//        .navigationDestination(for: Contact.self) { contact in
+//            PersonalContactView(contact: contact)
+        
     }
+}
+
+#Preview {
+    ContactsListView(contactPath: .constant([Contact(id: 6, name: "Лиса", surname: "Алиса", avatar: nil, status: false, story: true, lastSeen: Date(), phoneNumber: "+7 800 555-35-35")]))
 }
