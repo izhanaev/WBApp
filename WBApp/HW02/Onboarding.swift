@@ -10,7 +10,7 @@ import SwiftUI
 struct Onboarding: View {
     @State private var showModal1 = false
     @State private var showModal2 = false
-    @State private var navigateToContactsView = false
+    @State private var showModal3 = false
     
     var body: some View {
         NavigationStack {
@@ -71,7 +71,7 @@ struct Onboarding: View {
                             }
                         }
                         Button(action: {
-                            navigateToContactsView = true
+                            showModal3 = true
                         }) {
                             Text("Начать общаться")
                                 .font(.system(size: 16))
@@ -80,10 +80,6 @@ struct Onboarding: View {
                                 .frame(maxWidth: .infinity)
                                 .background(Color.defaultWB)
                                 .cornerRadius(30)
-                        }
-                        .padding(.top, 13)
-                        .navigationDestination(isPresented: $navigateToContactsView) {
-                            ContentView_TabView()
                         }
                     }
                     .padding(20)

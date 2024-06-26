@@ -19,7 +19,7 @@ struct ContentView_TabView: View {
             tabView(tab: .contacts, imageName: "ContactsTab", view: ContactsView())
             tabView(tab: .chats, imageName: "ChatsTab", view: ChatsView())
             tabView(tab: .more, imageName: "MoreTab", view: MoreView())
-        }.navigationBarBackButtonHidden(true)
+        }
             .tint(.monoDefaultWB)
     }
     

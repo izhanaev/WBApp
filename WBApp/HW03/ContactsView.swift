@@ -13,20 +13,14 @@ struct ContactsView: View {
     @State var contactPath = [Contact]()
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color.backgroundWB
-                    .edgesIgnoringSafeArea(.all)
-                VStack {
-                    ContactsSearchBarView(contactSearch: $contactSearch)
-                        .padding(.top, 16)
-                    
-                    ContactsListView(contactPath: $contactPath)
-                        
+        ZStack {
+            Color.backgroundWB.ignoresSafeArea()
+            NavigationStack(path: $contactPath) {
+                ContactsListView(contactPath: $contactPath)
+                    .padding(.top, 12)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarLeading) {
                             NavBarCustomName(titleNavBar: "Контакты")
-                                .padding(.leading, 12)
                         }
                         ToolbarItem(placement: .navigationBarTrailing) {
                             NavigationLink(destination: NewContactView()) {
@@ -34,18 +28,14 @@ struct ContactsView: View {
                                     .renderingMode(.template)
                                     .foregroundStyle(.mainTextWB)
                                     .bold()
-                                    .padding(.trailing, 12)
-                                
+                                    .padding(.trailing, 5)
                             }
                         }
                     }
+                    .background(Color.backgroundWB)
                     .navigationDestination(for: Contact.self) { contact in
                         PersonalContactView(contact: contact)
                     }
-                    .listStyle(PlainListStyle())
-                    .background(Color.backgroundWB)
-                }
-                .padding(.horizontal, 24)
             }
         }
     }
@@ -54,9 +44,3 @@ struct ContactsView: View {
 #Preview {
     ContactsView()
 }
-
-
-
-
-
-

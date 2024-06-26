@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9C0C52EB2C2AEA1300DD0C6F /* ContactCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C52EA2C2AEA1300DD0C6F /* ContactCellView.swift */; };
+		9C0C52ED2C2C1E4800DD0C6F /* ContactAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C52EC2C2C1E4800DD0C6F /* ContactAvatarView.swift */; };
+		9C0C52EF2C2C20B900DD0C6F /* ContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C52EE2C2C20B900DD0C6F /* ContactInfoView.swift */; };
 		9C11C2BF2C17188600F2E691 /* WBAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C11C2BE2C17188600F2E691 /* WBAppApp.swift */; };
 		9C11C2C32C17188700F2E691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C11C2C22C17188700F2E691 /* Assets.xcassets */; };
 		9C11C2C62C17188700F2E691 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C11C2C52C17188700F2E691 /* Preview Assets.xcassets */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		9C0C52EA2C2AEA1300DD0C6F /* ContactCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellView.swift; sourceTree = "<group>"; };
+		9C0C52EC2C2C1E4800DD0C6F /* ContactAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAvatarView.swift; sourceTree = "<group>"; };
+		9C0C52EE2C2C20B900DD0C6F /* ContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoView.swift; sourceTree = "<group>"; };
 		9C11C2BB2C17188600F2E691 /* WBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C11C2BE2C17188600F2E691 /* WBAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppApp.swift; sourceTree = "<group>"; };
 		9C11C2C22C17188700F2E691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				9C5417C12C2470620094DFD4 /* MoreView.swift */,
 				9C14A0412C299FB900FD1D48 /* ContactsListView.swift */,
 				9C0C52EA2C2AEA1300DD0C6F /* ContactCellView.swift */,
+				9C0C52EE2C2C20B900DD0C6F /* ContactInfoView.swift */,
+				9C0C52EC2C2C1E4800DD0C6F /* ContactAvatarView.swift */,
 				9C14A0432C29A9AF00FD1D48 /* ContactsSearchBarView.swift */,
 			);
 			path = HW03;
@@ -218,6 +224,7 @@
 				9C5417C02C24704D0094DFD4 /* ChatsView.swift in Sources */,
 				9C0C52EB2C2AEA1300DD0C6F /* ContactCellView.swift in Sources */,
 				9C5417B72C24685E0094DFD4 /* Contact.swift in Sources */,
+				9C0C52ED2C2C1E4800DD0C6F /* ContactAvatarView.swift in Sources */,
 				9C5417BC2C246AE60094DFD4 /* Router.swift in Sources */,
 				9C14A0492C29BAD500FD1D48 /* NavBarCustomName.swift in Sources */,
 				9C11C2CF2C17322800F2E691 /* Onboarding.swift in Sources */,
@@ -227,6 +234,7 @@
 				9C5417AA2C2464EA0094DFD4 /* ContactsView.swift in Sources */,
 				9C14A04B2C29BAE500FD1D48 /* NavBarCustomButton.swift in Sources */,
 				9C5417B92C24697D0094DFD4 /* ContentView.swift in Sources */,
+				9C0C52EF2C2C20B900DD0C6F /* ContactInfoView.swift in Sources */,
 				9C5417A62C2453790094DFD4 /* Tabs.swift in Sources */,
 				9C11C2BF2C17188600F2E691 /* WBAppApp.swift in Sources */,
 				9C14A0442C29A9AF00FD1D48 /* ContactsSearchBarView.swift in Sources */,

@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ContactsListView: View {
+    
     @Binding var contactPath: [Contact]
+    @State private var contactSearch: String = ""
+    
     private let contacts: [Contact] = [
         .init(id: 1, name: "Анастасия", surname: "Иванова", avatar: "Person1", status: false, story: false, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"),
         .init(id: 2, name: "Петя", surname: "", avatar: "Person2", status: true, story: false, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"),
@@ -19,18 +22,33 @@ struct ContactsListView: View {
     ]
     
     var body: some View {
-        List(contacts) { contact in
-            Button {
-                contactPath.append(contact)
-            } label: {
-                ContactCellView(contact: contact)
+        VStack {
+            ContactsSearchBarView(contactSearch: $contactSearch)
+                .padding(.horizontal)
+            
+            List {
+                ForEach(filteredContacts, id: \.id) { contact in
+                    Button {
+                        contactPath.append(contact)
+                    } label: {
+                        ContactCellView(contact: contact)
+                    }
+                    
+                    .listRowBackground(Color.backgroundWB)
+                }
             }
-//            NavigationLink(destination: PersonalContactView(contact: contact)
-//            ) { }
+            .listStyle(PlainListStyle())
+            .background(Color.backgroundWB)
         }
-//        .navigationDestination(for: Contact.self) { contact in
-//            PersonalContactView(contact: contact)
-        
+        .background(Color.backgroundWB)
+    }
+    
+    private var filteredContacts: [Contact] {
+        if contactSearch.isEmpty {
+            return contacts
+        } else {
+            return contacts.filter { $0.name.contains(contactSearch) || $0.surname.contains(contactSearch) }
+        }
     }
 }
 
