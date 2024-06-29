@@ -11,7 +11,8 @@ import SwiftUI
 struct WBAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView_TabView()
+//            ContentView_TabView()
+            ContentView()
         }
     }
 }

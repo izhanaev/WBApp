@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContactAvatarView: View {
     let gradient = Gradient(colors: [.storyGradient1WB, .storyGradient2WB])
-    var contact: Contact
+    var contact: ContactModel
     
     var body: some View {
         ZStack {
@@ -56,5 +56,5 @@ struct ContactAvatarView: View {
 }
 
 #Preview {
-    ContactAvatarView(contact: Contact(id: 1, name: "Лиса", surname: "Алиса", avatar: "Person1", status: true, story: true, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"))
+    ContactAvatarView(contact: ContactModel(id: 1, name: "Лиса", surname: "Алиса", avatar: "Person1", status: true, story: true, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"))
 }

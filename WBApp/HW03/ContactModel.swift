@@ -1,5 +1,5 @@
 //
-//  Contact.swift
+//  ContactModel.swift
 //  WBApp
 //
 //  Created by Ильяс Жанаев on 20.06.2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Contact: Hashable, Identifiable {
+struct ContactModel: Hashable, Identifiable {
     let id: Int
     let name: String
     let surname: String

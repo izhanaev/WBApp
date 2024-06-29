@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContactCellView: View {
     
-    var contact: Contact
+    var contact: ContactModel
     
     var body: some View {
             HStack {
@@ -24,5 +24,5 @@ struct ContactCellView: View {
 }
 
 #Preview {
-    ContactCellView(contact: Contact(id: 1, name: "Анастасия", surname: "Иванова", avatar: "Person1", status: true, story: false, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"))
+    ContactCellView(contact: ContactModel(id: 1, name: "Анастасия", surname: "Иванова", avatar: "Person1", status: true, story: false, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"))
 }

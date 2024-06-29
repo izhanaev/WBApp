@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PersonalContactView: View {
-    let contact: Contact
+    let contact: ContactModel
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
@@ -24,7 +24,7 @@ struct PersonalContactView: View {
                         }) {
                             NavBarCustomButton()
                         }
-                        NavBarCustomName(titleNavBar: "Профиль")
+                        NavBarCustomName(titleNavBar: NSLocalizedString("profile", comment: ""))
                     }
                 }
             }
@@ -34,5 +34,5 @@ struct PersonalContactView: View {
 }
 
 #Preview {
-    PersonalContactView(contact: Contact(id: 1, name: "Анастасия", surname: "Иванова", avatar: "Person1", status: false, story: false, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"))
+    PersonalContactView(contact: ContactModel(id: 1, name: "Анастасия", surname: "Иванова", avatar: "Person1", status: false, story: false, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"))
 }

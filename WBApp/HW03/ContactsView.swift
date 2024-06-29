@@ -10,7 +10,7 @@ import SwiftUI
 struct ContactsView: View {
     
     @State var contactSearch = ""
-    @State var contactPath = [Contact]()
+    @State var contactPath = [ContactModel]()
     
     var body: some View {
         ZStack {
@@ -20,7 +20,7 @@ struct ContactsView: View {
                     .padding(.top, 12)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarLeading) {
-                            NavBarCustomName(titleNavBar: "Контакты")
+                            NavBarCustomName(titleNavBar: NSLocalizedString("contacts", comment: ""))
                         }
                         ToolbarItem(placement: .navigationBarTrailing) {
                             NavigationLink(destination: NewContactView()) {
@@ -33,7 +33,7 @@ struct ContactsView: View {
                         }
                     }
                     .background(Color.backgroundWB)
-                    .navigationDestination(for: Contact.self) { contact in
+                    .navigationDestination(for: ContactModel.self) { contact in
                         PersonalContactView(contact: contact)
                     }
             }

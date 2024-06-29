@@ -17,7 +17,7 @@ struct ContactsSearchBarView: View {
                 .foregroundStyle(.grayWB)
             TextField("",
                       text: $contactSearch,
-                      prompt: Text("Search")
+                      prompt: Text(NSLocalizedString("search", comment: ""))
                 .foregroundColor(.grayWB))
         }
         .bold()

@@ -23,7 +23,7 @@ struct NewContactView: View {
                         }) {
                             NavBarCustomButton()
                         }
-                        NavBarCustomName(titleNavBar: "Новый контакт")
+                        NavBarCustomName(titleNavBar: NSLocalizedString("newContact", comment: ""))
                     }
                 }
             }

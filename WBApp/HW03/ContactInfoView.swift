@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContactInfoView: View {
     
-    var contact: Contact
+    var contact: ContactModel
     
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -18,15 +18,18 @@ struct ContactInfoView: View {
     }()
     
     var body: some View {
+        let lastSeenDateString = dateFormatter.string(from: contact.lastSeen)
+        let lastSeenLocalizedString = String.localizedStringWithFormat(NSLocalizedString("lastSeen", comment: ""), lastSeenDateString)
+        
         VStack(alignment: .leading) {
             Text("\(contact.name) \(contact.surname)")
                 .font(.headline)
             if contact.status {
-                Text("Online")
+                Text(NSLocalizedString("online", comment: ""))
                     .font(.subheadline)
                     .foregroundColor(.grayWB)
             } else {
-                Text("Был в сети: \(dateFormatter.string(from: contact.lastSeen))")
+                Text(lastSeenLocalizedString)
                     .font(.subheadline)
                     .foregroundColor(.grayWB)
             }
@@ -36,5 +39,5 @@ struct ContactInfoView: View {
 }
 
 #Preview {
-    ContactInfoView(contact: Contact(id: 1, name: "Анастасия", surname: "Иванова", avatar: "Person1", status: true, story: true, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"))
+    ContactInfoView(contact: ContactModel(id: 1, name: "Анастасия", surname: "Иванова", avatar: "Person1", status: false, story: true, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"))
 }
