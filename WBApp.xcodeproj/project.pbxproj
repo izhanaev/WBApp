@@ -24,6 +24,8 @@
 		9C40C0F82C3050EC00116655 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C0F72C3050EC00116655 /* OnboardingView.swift */; };
 		9C40C0FA2C30510400116655 /* OnboardingButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C0F92C30510400116655 /* OnboardingButtons.swift */; };
 		9C40C0FC2C30512000116655 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C0FB2C30511F00116655 /* DismissButton.swift */; };
+		9C40C1002C317A6700116655 /* PersonalContactAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C0FF2C317A6700116655 /* PersonalContactAvatarView.swift */; };
+		9C40C1022C317C5100116655 /* PersonalContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C1012C317C5100116655 /* PersonalContactInfoView.swift */; };
 		9C5417A62C2453790094DFD4 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417A52C2453790094DFD4 /* Tabs.swift */; };
 		9C5417AA2C2464EA0094DFD4 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417A92C2464EA0094DFD4 /* ContactsView.swift */; };
 		9C5417B72C24685E0094DFD4 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417B62C24685E0094DFD4 /* ContactModel.swift */; };
@@ -54,6 +56,8 @@
 		9C40C0F72C3050EC00116655 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		9C40C0F92C30510400116655 /* OnboardingButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButtons.swift; sourceTree = "<group>"; };
 		9C40C0FB2C30511F00116655 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		9C40C0FF2C317A6700116655 /* PersonalContactAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactAvatarView.swift; sourceTree = "<group>"; };
+		9C40C1012C317C5100116655 /* PersonalContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactInfoView.swift; sourceTree = "<group>"; };
 		9C5417A52C2453790094DFD4 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		9C5417A92C2464EA0094DFD4 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		9C5417B62C24685E0094DFD4 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
@@ -128,19 +132,13 @@
 		9C11C2CD2C1726A900F2E691 /* HW03 */ = {
 			isa = PBXGroup;
 			children = (
+				9C40C0FE2C317A1A00116655 /* PersonalContact */,
+				9C40C0FD2C31799600116655 /* Contact */,
 				9C14A0472C29BAB400FD1D48 /* NavBarCustom */,
-				9C5417A92C2464EA0094DFD4 /* ContactsView.swift */,
 				9C14A04C2C29BE6E00FD1D48 /* NewContactView.swift */,
-				9C14A0452C29B90A00FD1D48 /* PersonalContactView.swift */,
-				9C5417B62C24685E0094DFD4 /* ContactModel.swift */,
 				9C40C0EC2C3016EF00116655 /* MockData.swift */,
 				9C5417BF2C24704D0094DFD4 /* ChatsView.swift */,
 				9C5417C12C2470620094DFD4 /* MoreView.swift */,
-				9C14A0412C299FB900FD1D48 /* ContactsListView.swift */,
-				9C0C52EA2C2AEA1300DD0C6F /* ContactCellView.swift */,
-				9C0C52EE2C2C20B900DD0C6F /* ContactInfoView.swift */,
-				9C0C52EC2C2C1E4800DD0C6F /* ContactAvatarView.swift */,
-				9C14A0432C29A9AF00FD1D48 /* ContactsSearchBarView.swift */,
 			);
 			path = HW03;
 			sourceTree = "<group>";
@@ -160,6 +158,30 @@
 				9C40C0F22C30237800116655 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		9C40C0FD2C31799600116655 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				9C5417B62C24685E0094DFD4 /* ContactModel.swift */,
+				9C5417A92C2464EA0094DFD4 /* ContactsView.swift */,
+				9C14A0412C299FB900FD1D48 /* ContactsListView.swift */,
+				9C0C52EA2C2AEA1300DD0C6F /* ContactCellView.swift */,
+				9C0C52EE2C2C20B900DD0C6F /* ContactInfoView.swift */,
+				9C0C52EC2C2C1E4800DD0C6F /* ContactAvatarView.swift */,
+				9C14A0432C29A9AF00FD1D48 /* ContactsSearchBarView.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		9C40C0FE2C317A1A00116655 /* PersonalContact */ = {
+			isa = PBXGroup;
+			children = (
+				9C14A0452C29B90A00FD1D48 /* PersonalContactView.swift */,
+				9C40C0FF2C317A6700116655 /* PersonalContactAvatarView.swift */,
+				9C40C1012C317C5100116655 /* PersonalContactInfoView.swift */,
+			);
+			path = PersonalContact;
 			sourceTree = "<group>";
 		};
 		9C5417BA2C246AC10094DFD4 /* Routing */ = {
@@ -250,11 +272,13 @@
 				9C0C52ED2C2C1E4800DD0C6F /* ContactAvatarView.swift in Sources */,
 				9C5417BC2C246AE60094DFD4 /* Router.swift in Sources */,
 				9C40C0F82C3050EC00116655 /* OnboardingView.swift in Sources */,
+				9C40C1022C317C5100116655 /* PersonalContactInfoView.swift in Sources */,
 				9C14A0492C29BAD500FD1D48 /* NavBarCustomName.swift in Sources */,
 				9C5417BE2C246E9B0094DFD4 /* ContentView_TabView.swift in Sources */,
 				9C40C0ED2C3016EF00116655 /* MockData.swift in Sources */,
 				9C5417C22C2470620094DFD4 /* MoreView.swift in Sources */,
 				9C14A0422C299FB900FD1D48 /* ContactsListView.swift in Sources */,
+				9C40C1002C317A6700116655 /* PersonalContactAvatarView.swift in Sources */,
 				9C40C0FC2C30512000116655 /* DismissButton.swift in Sources */,
 				9C5417AA2C2464EA0094DFD4 /* ContactsView.swift in Sources */,
 				9C14A04B2C29BAE500FD1D48 /* NavBarCustomButton.swift in Sources */,
