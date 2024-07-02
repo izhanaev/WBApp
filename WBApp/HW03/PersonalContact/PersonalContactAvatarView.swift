@@ -11,7 +11,11 @@ struct PersonalContactAvatarView: View {
     var contact: ContactModel
     
     var body: some View {
-        Image("NonAvatar")
+        Image(contact.avatar ?? "NonAvatar")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 200, height: 200)
+            .clipShape(Circle())
     }
     
 }

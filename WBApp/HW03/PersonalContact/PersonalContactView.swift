@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct PersonalContactView: View {
     let contact: ContactModel
     @Environment(\.presentationMode) var presentationMode
@@ -15,20 +14,35 @@ struct PersonalContactView: View {
             Color.backgroundWB
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                Image("Illustation")
-                .navigationBarBackButtonHidden()
-                .toolbar {
-                    ToolbarItemGroup(placement: .topBarLeading) {
-                        Button(action: {
-                            self.presentationMode.wrappedValue.dismiss()
-                        }) {
-                            NavBarCustomButton()
+                PersonalContactAvatarView(contact: contact)
+                    .padding(.top, 46)
+                PersonalContactInfoView(contact: contact)
+                    .padding(.top, 20)
+                PersonalContactSocButtonListView()
+                    .padding(.top, 40)
+                Spacer()
+                    .navigationBarBackButtonHidden()
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            HStack {
+                                Button(action: {
+                                    self.presentationMode.wrappedValue.dismiss()
+                                }) {
+                                    NavBarCustomButton()
+                                }
+                                NavBarCustomName(titleNavBar: NSLocalizedString("profile", comment: ""))
+                            }
                         }
-                        NavBarCustomName(titleNavBar: NSLocalizedString("profile", comment: ""))
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            NavigationLink(destination: PersonalContactEditView()) {
+                                Image("Edit")
+                                    .renderingMode(.template)
+                                    .foregroundStyle(.mainTextWB)
+                                    .padding(.trailing, 5)
+                            }
+                        }
                     }
-                }
             }
-            
         }
     }
 }

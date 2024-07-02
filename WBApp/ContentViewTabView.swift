@@ -1,5 +1,5 @@
 //
-//  ContentView_TabView.swift
+//  ContentViewTabView.swift
 //  WBApp
 //
 //  Created by Ильяс Жанаев on 20.06.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView_TabView: View {
+struct ContentViewTabView: View {
     @StateObject var router: Router = .init()
     
     init() {
@@ -42,5 +42,5 @@ struct ContentView_TabView: View {
 }
 
 #Preview {
-    ContentView_TabView()
+    ContentViewTabView()
 }
