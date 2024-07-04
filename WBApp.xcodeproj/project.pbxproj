@@ -71,6 +71,7 @@
 		9C5417C12C2470620094DFD4 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		9C74A3DE2C3432E800F2DB39 /* PersonalContactEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactEditView.swift; sourceTree = "<group>"; };
 		9C74A3E22C34494300F2DB39 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9CD04BC92C36BF9000688301 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +105,7 @@
 		9C11C2BD2C17188600F2E691 /* WBApp */ = {
 			isa = PBXGroup;
 			children = (
+				9CD04BC72C36BF6600688301 /* HW06 */,
 				9C74A3E12C34420300F2DB39 /* HW05 */,
 				9C74A3E02C3441F700F2DB39 /* HW04 */,
 				9C40C0EE2C30222900116655 /* Localization */,
@@ -215,6 +217,14 @@
 				9C74A3E22C34494300F2DB39 /* Bank.playground */,
 			);
 			path = HW05;
+			sourceTree = "<group>";
+		};
+		9CD04BC72C36BF6600688301 /* HW06 */ = {
+			isa = PBXGroup;
+			children = (
+				9CD04BC92C36BF9000688301 /* Factory.playground */,
+			);
+			path = HW06;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
