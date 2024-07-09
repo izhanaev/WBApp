@@ -12,7 +12,6 @@ struct WBAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentViewTabView()
-//            ContentView()
         }
     }
 }
