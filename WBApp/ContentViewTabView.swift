@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ContentViewTabView: View {
-    @StateObject var router: Router = .init()
-    
+    @State var tab: Tabs = Router.shared.selectedTab
+//    @EnvironmentObject var router: Router
     init() {
         configureTabBarAppearance()
     }
     
     var body: some View {
-        TabView(selection: $router.selectedTab) {
+        TabView(selection: $tab) {
             tabView(tab: .contacts, imageName: "ContactsTab", view: ContactsView())
             tabView(tab: .chats, imageName: "ChatsTab", view: ChatsView())
             tabView(tab: .more, imageName: "MoreTab", view: MoreView())
