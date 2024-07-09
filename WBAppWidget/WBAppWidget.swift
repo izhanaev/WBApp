@@ -37,41 +37,21 @@ struct SimpleEntry: TimelineEntry {
     let configuration: ConfigurationAppIntent
 }
 
-struct WBAppWidgetEntryView : View {
-    var entry: Provider.Entry
-
-    var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Favorite Emoji:")
-            Text(entry.configuration.favoriteEmoji)
-        }
-    }
-}
-
 struct WBAppWidget: Widget {
     let kind: String = "WBAppWidget"
 
     var body: some WidgetConfiguration {
         AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
-            WBAppWidgetEntryView(entry: entry)
-                .containerBackground(.fill.tertiary, for: .widget)
+            WBAppWidgetEntryView(entry: entry, contact: ContactModel(id: 1, avatar: "WidgetAvatar1", status: true, story: true))
+                .containerBackground(.widgetBackground, for: .widget)
         }
+        .supportedFamilies([.systemSmall])
     }
 }
 
 extension ConfigurationAppIntent {
     fileprivate static var smiley: ConfigurationAppIntent {
         let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "😀"
-        return intent
-    }
-    
-    fileprivate static var starEyes: ConfigurationAppIntent {
-        let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "🤩"
         return intent
     }
 }
@@ -80,5 +60,5 @@ extension ConfigurationAppIntent {
     WBAppWidget()
 } timeline: {
     SimpleEntry(date: .now, configuration: .smiley)
-    SimpleEntry(date: .now, configuration: .starEyes)
 }
+

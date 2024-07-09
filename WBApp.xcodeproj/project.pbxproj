@@ -27,6 +27,7 @@
 		9C40C1002C317A6700116655 /* PersonalContactAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C0FF2C317A6700116655 /* PersonalContactAvatarView.swift */; };
 		9C40C1022C317C5100116655 /* PersonalContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C1012C317C5100116655 /* PersonalContactInfoView.swift */; };
 		9C40C1062C31B79300116655 /* PersonalContactSocButtonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C1052C31B79300116655 /* PersonalContactSocButtonListView.swift */; };
+		9C48F9922C3D533D008A8B57 /* WBAppWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C48F9912C3D533D008A8B57 /* WBAppWidgetEntryView.swift */; };
 		9C5417A62C2453790094DFD4 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417A52C2453790094DFD4 /* Tabs.swift */; };
 		9C5417AA2C2464EA0094DFD4 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417A92C2464EA0094DFD4 /* ContactsView.swift */; };
 		9C5417B72C24685E0094DFD4 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417B62C24685E0094DFD4 /* ContactModel.swift */; };
@@ -39,7 +40,6 @@
 		9CD04BD12C36E2FA00688301 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD04BD02C36E2FA00688301 /* WidgetKit.framework */; };
 		9CD04BD32C36E2FA00688301 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD04BD22C36E2FA00688301 /* SwiftUI.framework */; };
 		9CD04BD62C36E2FA00688301 /* WBAppWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD04BD52C36E2FA00688301 /* WBAppWidgetBundle.swift */; };
-		9CD04BD82C36E2FA00688301 /* WBAppWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD04BD72C36E2FA00688301 /* WBAppWidgetLiveActivity.swift */; };
 		9CD04BDA2C36E2FA00688301 /* WBAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD04BD92C36E2FA00688301 /* WBAppWidget.swift */; };
 		9CD04BDC2C36E2FA00688301 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD04BDB2C36E2FA00688301 /* AppIntent.swift */; };
 		9CD04BDE2C36E2FB00688301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD04BDD2C36E2FB00688301 /* Assets.xcassets */; };
@@ -94,6 +94,7 @@
 		9C40C0FF2C317A6700116655 /* PersonalContactAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactAvatarView.swift; sourceTree = "<group>"; };
 		9C40C1012C317C5100116655 /* PersonalContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactInfoView.swift; sourceTree = "<group>"; };
 		9C40C1052C31B79300116655 /* PersonalContactSocButtonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactSocButtonListView.swift; sourceTree = "<group>"; };
+		9C48F9912C3D533D008A8B57 /* WBAppWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppWidgetEntryView.swift; sourceTree = "<group>"; };
 		9C5417A52C2453790094DFD4 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		9C5417A92C2464EA0094DFD4 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		9C5417B62C24685E0094DFD4 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
@@ -109,7 +110,6 @@
 		9CD04BD02C36E2FA00688301 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		9CD04BD22C36E2FA00688301 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		9CD04BD52C36E2FA00688301 /* WBAppWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppWidgetBundle.swift; sourceTree = "<group>"; };
-		9CD04BD72C36E2FA00688301 /* WBAppWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppWidgetLiveActivity.swift; sourceTree = "<group>"; };
 		9CD04BD92C36E2FA00688301 /* WBAppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppWidget.swift; sourceTree = "<group>"; };
 		9CD04BDB2C36E2FA00688301 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		9CD04BDD2C36E2FB00688301 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -296,7 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				9CD04BD52C36E2FA00688301 /* WBAppWidgetBundle.swift */,
-				9CD04BD72C36E2FA00688301 /* WBAppWidgetLiveActivity.swift */,
+				9C48F9912C3D533D008A8B57 /* WBAppWidgetEntryView.swift */,
 				9CD04BD92C36E2FA00688301 /* WBAppWidget.swift */,
 				9CD04BDB2C36E2FA00688301 /* AppIntent.swift */,
 				9CD04BDD2C36E2FB00688301 /* Assets.xcassets */,
@@ -450,10 +450,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C48F9922C3D533D008A8B57 /* WBAppWidgetEntryView.swift in Sources */,
 				9CD04BDA2C36E2FA00688301 /* WBAppWidget.swift in Sources */,
 				9CD04BDC2C36E2FA00688301 /* AppIntent.swift in Sources */,
 				9CD04BD62C36E2FA00688301 /* WBAppWidgetBundle.swift in Sources */,
-				9CD04BD82C36E2FA00688301 /* WBAppWidgetLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
