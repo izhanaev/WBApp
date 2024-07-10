@@ -49,7 +49,7 @@ struct ContactAvatarView: View {
                 .overlay(
                     Text("\(contact.name.prefix(1))\(contact.surname.prefix(1))")
                         .font(.headline)
-                        .foregroundColor(.whiteTextWB)
+                        .foregroundStyle(.whiteTextWB)
                 )
         }
     }

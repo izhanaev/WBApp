@@ -43,7 +43,7 @@ struct StringInterpolationView: View {
             VStack(alignment: .leading) {
                 ForEach(0..<5) { index in
                     Text(formattedDate(for: index))
-                        .foregroundColor(selectedDateTextColor(for: index))
+                        .foregroundStyle(selectedDateTextColor(for: index))
                         .padding(2)
                         .lineLimit(1)
                 }

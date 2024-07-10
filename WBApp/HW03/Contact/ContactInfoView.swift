@@ -27,11 +27,11 @@ struct ContactInfoView: View {
             if contact.status {
                 Text(NSLocalizedString("online", comment: ""))
                     .font(.subheadline)
-                    .foregroundColor(.grayWB)
+                    .foregroundStyle(.grayWB)
             } else {
                 Text(lastSeenLocalizedString)
                     .font(.subheadline)
-                    .foregroundColor(.grayWB)
+                    .foregroundStyle(.grayWB)
             }
         }
         .background(Color.backgroundWB)

@@ -14,9 +14,9 @@ struct PersonalContactInfoView: View {
         VStack {
             Text("\(contact.name) \(contact.surname)")
                 .font(.headline)
-                .foregroundColor(.mainTextWB)
+                .foregroundStyle(.mainTextWB)
             Text(contact.phoneNumber)
-                .foregroundColor(.grayWB)
+                .foregroundStyle(.grayWB)
         }
         .background(Color.backgroundWB)
     }
