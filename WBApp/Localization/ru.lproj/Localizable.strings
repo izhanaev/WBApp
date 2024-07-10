@@ -18,3 +18,6 @@
 "online" = "Online";
 "lastSeen" = "Был в сети: %@";
 "search" = "Search";
+"select" = "Выберите дату, а так же язык";
+"" = "";
+"" = "";

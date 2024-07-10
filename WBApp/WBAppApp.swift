@@ -13,6 +13,7 @@ struct WBAppApp: App {
         WindowGroup {
             ContentViewTabView()
 //            ContentView()
+//            StringInterpolationView()
         }
     }
 }

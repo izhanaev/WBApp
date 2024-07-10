@@ -28,6 +28,7 @@
 		9C40C1022C317C5100116655 /* PersonalContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C1012C317C5100116655 /* PersonalContactInfoView.swift */; };
 		9C40C1062C31B79300116655 /* PersonalContactSocButtonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C1052C31B79300116655 /* PersonalContactSocButtonListView.swift */; };
 		9C48F9922C3D533D008A8B57 /* WBAppWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C48F9912C3D533D008A8B57 /* WBAppWidgetEntryView.swift */; };
+		9C48F9972C3D75AB008A8B57 /* StringInterpolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C48F9962C3D75AB008A8B57 /* StringInterpolationView.swift */; };
 		9C5417A62C2453790094DFD4 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417A52C2453790094DFD4 /* Tabs.swift */; };
 		9C5417AA2C2464EA0094DFD4 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417A92C2464EA0094DFD4 /* ContactsView.swift */; };
 		9C5417B72C24685E0094DFD4 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417B62C24685E0094DFD4 /* ContactModel.swift */; };
@@ -95,6 +96,7 @@
 		9C40C1012C317C5100116655 /* PersonalContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactInfoView.swift; sourceTree = "<group>"; };
 		9C40C1052C31B79300116655 /* PersonalContactSocButtonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactSocButtonListView.swift; sourceTree = "<group>"; };
 		9C48F9912C3D533D008A8B57 /* WBAppWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppWidgetEntryView.swift; sourceTree = "<group>"; };
+		9C48F9962C3D75AB008A8B57 /* StringInterpolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterpolationView.swift; sourceTree = "<group>"; };
 		9C5417A52C2453790094DFD4 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		9C5417A92C2464EA0094DFD4 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		9C5417B62C24685E0094DFD4 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		9C11C2BD2C17188600F2E691 /* WBApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C48F9952C3D7562008A8B57 /* HW07 */,
 				9CD04BC72C36BF6600688301 /* HW06 */,
 				9C74A3E12C34420300F2DB39 /* HW05 */,
 				9C74A3E02C3441F700F2DB39 /* HW04 */,
@@ -248,6 +251,14 @@
 				9C40C1052C31B79300116655 /* PersonalContactSocButtonListView.swift */,
 			);
 			path = PersonalContact;
+			sourceTree = "<group>";
+		};
+		9C48F9952C3D7562008A8B57 /* HW07 */ = {
+			isa = PBXGroup;
+			children = (
+				9C48F9962C3D75AB008A8B57 /* StringInterpolationView.swift */,
+			);
+			path = HW07;
 			sourceTree = "<group>";
 		};
 		9C5417BA2C246AC10094DFD4 /* Routing */ = {
@@ -430,6 +441,7 @@
 				9C5417BE2C246E9B0094DFD4 /* ContentViewTabView.swift in Sources */,
 				9C40C0ED2C3016EF00116655 /* MockData.swift in Sources */,
 				9C5417C22C2470620094DFD4 /* MoreView.swift in Sources */,
+				9C48F9972C3D75AB008A8B57 /* StringInterpolationView.swift in Sources */,
 				9C14A0422C299FB900FD1D48 /* ContactsListView.swift in Sources */,
 				9C40C1002C317A6700116655 /* PersonalContactAvatarView.swift in Sources */,
 				9C40C0FC2C30512000116655 /* DismissButton.swift in Sources */,
