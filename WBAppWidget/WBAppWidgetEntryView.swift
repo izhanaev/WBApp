@@ -10,7 +10,7 @@ import WidgetKit
 
 struct WBAppWidgetEntryView : View {
     var entry: Provider.Entry
-    let gradient = Gradient(colors: [.widgetStoryGradient1WB, .widgetStoryGradient2WB])
+    let gradient = Gradient(colors: [.storyGradient1WB, .storyGradient2WB])
     var contact: ContactModel
 
     var body: some View {
@@ -19,18 +19,18 @@ struct WBAppWidgetEntryView : View {
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
                     .fill(LinearGradient(gradient: gradient, startPoint: .topLeading, endPoint: .bottomTrailing))
                     .frame(width: 112, height: 112)
-                    .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Color.widgetBackground, lineWidth: 3))
+                    .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Color.backgroundWB, lineWidth: 3))
             }
             
             avatarView
                 .frame(width: 96, height: 96)
                 .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-                .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(Color.widgetBackground, lineWidth: 2))
+                .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(Color.backgroundWB, lineWidth: 2))
                 .padding(contact.story ? 4 : 0)
             
             if contact.status {
                 Circle()
-                    .fill(Color.widgetGreenWB)
+                    .fill(Color.greenWB)
                     .frame(width: 24, height: 24)
                     .overlay(Circle().stroke(Color.white, lineWidth: 2))
                     .offset(x: 40, y: -40)
@@ -45,11 +45,4 @@ struct WBAppWidgetEntryView : View {
                 .aspectRatio(contentMode: .fill)
         }
     }
-}
-
-struct ContactModel: Hashable, Identifiable {
-    let id: Int
-    let avatar: String?
-    let status: Bool
-    let story: Bool
 }

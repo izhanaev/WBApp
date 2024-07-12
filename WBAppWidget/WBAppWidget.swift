@@ -42,8 +42,8 @@ struct WBAppWidget: Widget {
 
     var body: some WidgetConfiguration {
         AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
-            WBAppWidgetEntryView(entry: entry, contact: ContactModel(id: 1, avatar: "WidgetAvatar1", status: true, story: true))
-                .containerBackground(.widgetBackground, for: .widget)
+            WBAppWidgetEntryView(entry: entry, contact: ContactModel(id: 6, name: "Лиса", surname: "Алиса", avatar: "Person1", status: true, story: true, lastSeen: Date(), phoneNumber: "+7 800 555-35-35"))
+                .containerBackground(.backgroundWB, for: .widget)
         }
         .supportedFamilies([.systemSmall])
     }

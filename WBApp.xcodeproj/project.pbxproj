@@ -46,6 +46,9 @@
 		9CD04BDE2C36E2FB00688301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD04BDD2C36E2FB00688301 /* Assets.xcassets */; };
 		9CD04BE22C36E2FB00688301 /* WBAppWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9CD04BCE2C36E2FA00688301 /* WBAppWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9CD04BE92C36EB2100688301 /* ChatsIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD04BE82C36EB2100688301 /* ChatsIntent.swift */; };
+		9CEF50F82C41549600431997 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417B62C24685E0094DFD4 /* ContactModel.swift */; };
+		9CEF50F92C41553200431997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C11C2C22C17188700F2E691 /* Assets.xcassets */; };
+		9CEF50FA2C4156AE00431997 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C0EC2C3016EF00116655 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -416,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CEF50F92C41553200431997 /* Assets.xcassets in Resources */,
 				9CD04BDE2C36E2FB00688301 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,8 +467,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C48F9922C3D533D008A8B57 /* WBAppWidgetEntryView.swift in Sources */,
+				9CEF50FA2C4156AE00431997 /* MockData.swift in Sources */,
 				9CD04BDA2C36E2FA00688301 /* WBAppWidget.swift in Sources */,
 				9CD04BDC2C36E2FA00688301 /* AppIntent.swift in Sources */,
+				9CEF50F82C41549600431997 /* ContactModel.swift in Sources */,
 				9CD04BD62C36E2FA00688301 /* WBAppWidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
