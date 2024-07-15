@@ -11,9 +11,10 @@ import SwiftUI
 struct WBAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentViewTabView()
+//            ContentViewTabView()
 //            ContentView()
 //            StringInterpolationView()
+            InfiniteScrollView()
         }
     }
 }

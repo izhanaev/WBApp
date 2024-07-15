@@ -38,6 +38,9 @@
 		9C5417C02C24704D0094DFD4 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417BF2C24704D0094DFD4 /* ChatsView.swift */; };
 		9C5417C22C2470620094DFD4 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5417C12C2470620094DFD4 /* MoreView.swift */; };
 		9C74A3DF2C3432E800F2DB39 /* PersonalContactEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C74A3DE2C3432E800F2DB39 /* PersonalContactEditView.swift */; };
+		9C8965FC2C4555700030478F /* InfiniteScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8965FB2C4555700030478F /* InfiniteScrollView.swift */; };
+		9C8965FE2C4572C70030478F /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8965FD2C4572C70030478F /* Emoji.swift */; };
+		9C8966002C45A1DF0030478F /* GeometryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8965FF2C45A1DF0030478F /* GeometryCellView.swift */; };
 		9CD04BD12C36E2FA00688301 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD04BD02C36E2FA00688301 /* WidgetKit.framework */; };
 		9CD04BD32C36E2FA00688301 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD04BD22C36E2FA00688301 /* SwiftUI.framework */; };
 		9CD04BD62C36E2FA00688301 /* WBAppWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD04BD52C36E2FA00688301 /* WBAppWidgetBundle.swift */; };
@@ -110,6 +113,9 @@
 		9C5417C12C2470620094DFD4 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		9C74A3DE2C3432E800F2DB39 /* PersonalContactEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactEditView.swift; sourceTree = "<group>"; };
 		9C74A3E22C34494300F2DB39 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9C8965FB2C4555700030478F /* InfiniteScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollView.swift; sourceTree = "<group>"; };
+		9C8965FD2C4572C70030478F /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		9C8965FF2C45A1DF0030478F /* GeometryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryCellView.swift; sourceTree = "<group>"; };
 		9CD04BC92C36BF9000688301 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9CD04BCE2C36E2FA00688301 /* WBAppWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WBAppWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD04BD02C36E2FA00688301 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -165,6 +171,7 @@
 		9C11C2BD2C17188600F2E691 /* WBApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C8965F42C454A870030478F /* HW09 */,
 				9C48F9952C3D7562008A8B57 /* HW07 */,
 				9CD04BC72C36BF6600688301 /* HW06 */,
 				9C74A3E12C34420300F2DB39 /* HW05 */,
@@ -287,6 +294,16 @@
 				9C74A3E22C34494300F2DB39 /* Bank.playground */,
 			);
 			path = HW05;
+			sourceTree = "<group>";
+		};
+		9C8965F42C454A870030478F /* HW09 */ = {
+			isa = PBXGroup;
+			children = (
+				9C8965FB2C4555700030478F /* InfiniteScrollView.swift */,
+				9C8965FF2C45A1DF0030478F /* GeometryCellView.swift */,
+				9C8965FD2C4572C70030478F /* Emoji.swift */,
+			);
+			path = HW09;
 			sourceTree = "<group>";
 		};
 		9CD04BC72C36BF6600688301 /* HW06 */ = {
@@ -431,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8965FE2C4572C70030478F /* Emoji.swift in Sources */,
 				9C14A04D2C29BE6E00FD1D48 /* NewContactView.swift in Sources */,
 				9C40C1062C31B79300116655 /* PersonalContactSocButtonListView.swift in Sources */,
 				9C5417C02C24704D0094DFD4 /* ChatsView.swift in Sources */,
@@ -456,9 +474,11 @@
 				9C40C0FA2C30510400116655 /* OnboardingButtons.swift in Sources */,
 				9C0C52EF2C2C20B900DD0C6F /* ContactInfoView.swift in Sources */,
 				9C5417A62C2453790094DFD4 /* Tabs.swift in Sources */,
+				9C8966002C45A1DF0030478F /* GeometryCellView.swift in Sources */,
 				9C11C2BF2C17188600F2E691 /* WBAppApp.swift in Sources */,
 				9C14A0442C29A9AF00FD1D48 /* ContactsSearchBarView.swift in Sources */,
 				9C14A0462C29B90A00FD1D48 /* PersonalContactView.swift in Sources */,
+				9C8965FC2C4555700030478F /* InfiniteScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
