@@ -12,22 +12,39 @@ struct GeometryCellView: View {
     
     var body: some View {
         Group {
-            HStack {
+            if alignment == .top || alignment == .bottom {
                 VStack {
-                    rectangles(2)
+                    HStack {
+                        if alignment == .top { rectangles(2) }
+                    }
+                    rectangles(1)
+                    HStack {
+                        if alignment == .bottom { rectangles(2) }
+                    }
                 }
-                rectangles(1)
-                    .foregroundStyle(.red)
+            } else {
+                HStack {
+                    VStack {
+                        if alignment == .leading { rectangles(2) }
+                    }
+                    rectangles(1)
+                    VStack {
+                        if alignment == .trailing { rectangles(2) }
+                    }
+                }
             }
         }
+        .padding(30)
     }
     
     @ViewBuilder
     private func rectangles(_ amount: Int) -> some View {
+        let randomColor = Int.random(in: 0...1)
         if amount > 0 {
             ForEach(0..<amount, id: \.self) { _ in
                 RoundedRectangle(cornerRadius: 25.0)
                     .stroke(style: StrokeStyle(lineWidth: 3, dash: [16, 4]))
+                    .foregroundStyle(randomColor == 0 ? .cyan : .black)
             }
         } else {
             EmptyView()

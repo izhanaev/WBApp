@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct InfiniteScrollView: View {
+    @StateObject private var viewModel = EmojiViewModel()
+    
     var body: some View {
         ScrollView {
-            Text("q")
+            LazyVStack {
+                ForEach(viewModel.emojis) { emoji in
+                    EmojiCellView(emoji: emoji)
+                        .onAppear {
+                            if emoji == viewModel.emojis.last {
+                                viewModel.loadMoreEmojie()
+                            }
+                        }
+                }
+            }
         }
     }
 }
