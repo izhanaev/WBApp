@@ -21,6 +21,9 @@
 		9C14A04D2C29BE6E00FD1D48 /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14A04C2C29BE6E00FD1D48 /* NewContactView.swift */; };
 		9C3F4EBA2C47ECA800E25205 /* EmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F4EB92C47ECA800E25205 /* EmojiViewModel.swift */; };
 		9C3F4EBE2C47ECDC00E25205 /* EmojiCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F4EBD2C47ECDC00E25205 /* EmojiCellView.swift */; };
+		9C3F4EC12C47FD9100E25205 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F4EC02C47FD9100E25205 /* VerificationView.swift */; };
+		9C3F4EC32C4805BD00E25205 /* VerificationEnterNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F4EC22C4805BD00E25205 /* VerificationEnterNumberView.swift */; };
+		9C3F4EC82C4814D300E25205 /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F4EC72C4814D300E25205 /* VerificationModel.swift */; };
 		9C40C0ED2C3016EF00116655 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C0EC2C3016EF00116655 /* MockData.swift */; };
 		9C40C0F42C30237800116655 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C40C0F22C30237800116655 /* Localizable.strings */; };
 		9C40C0F82C3050EC00116655 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40C0F72C3050EC00116655 /* OnboardingView.swift */; };
@@ -96,6 +99,9 @@
 		9C14A04C2C29BE6E00FD1D48 /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
 		9C3F4EB92C47ECA800E25205 /* EmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewModel.swift; sourceTree = "<group>"; };
 		9C3F4EBD2C47ECDC00E25205 /* EmojiCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCellView.swift; sourceTree = "<group>"; };
+		9C3F4EC02C47FD9100E25205 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		9C3F4EC22C4805BD00E25205 /* VerificationEnterNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationEnterNumberView.swift; sourceTree = "<group>"; };
+		9C3F4EC72C4814D300E25205 /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
 		9C40C0EC2C3016EF00116655 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		9C40C0F52C30237E00116655 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9C40C0F62C30252400116655 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -175,6 +181,7 @@
 		9C11C2BD2C17188600F2E691 /* WBApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C3F4EBF2C47FD0D00E25205 /* HW10 */,
 				9C40C0EE2C30222900116655 /* Localization */,
 				9C8965F42C454A870030478F /* HW09 */,
 				9C48F9952C3D7562008A8B57 /* HW07 */,
@@ -231,6 +238,16 @@
 				9C14A04A2C29BAE500FD1D48 /* NavBarCustomButton.swift */,
 			);
 			path = NavBarCustom;
+			sourceTree = "<group>";
+		};
+		9C3F4EBF2C47FD0D00E25205 /* HW10 */ = {
+			isa = PBXGroup;
+			children = (
+				9C3F4EC02C47FD9100E25205 /* VerificationView.swift */,
+				9C3F4EC22C4805BD00E25205 /* VerificationEnterNumberView.swift */,
+				9C3F4EC72C4814D300E25205 /* VerificationModel.swift */,
+			);
+			path = HW10;
 			sourceTree = "<group>";
 		};
 		9C40C0EE2C30222900116655 /* Localization */ = {
@@ -476,13 +493,16 @@
 				9C40C0FC2C30512000116655 /* DismissButton.swift in Sources */,
 				9C5417AA2C2464EA0094DFD4 /* ContactsView.swift in Sources */,
 				9C74A3DF2C3432E800F2DB39 /* PersonalContactEditView.swift in Sources */,
+				9C3F4EC82C4814D300E25205 /* VerificationModel.swift in Sources */,
 				9C14A04B2C29BAE500FD1D48 /* NavBarCustomButton.swift in Sources */,
 				9C5417B92C24697D0094DFD4 /* ContentView.swift in Sources */,
 				9C3F4EBE2C47ECDC00E25205 /* EmojiCellView.swift in Sources */,
 				9C40C0FA2C30510400116655 /* OnboardingButtons.swift in Sources */,
+				9C3F4EC32C4805BD00E25205 /* VerificationEnterNumberView.swift in Sources */,
 				9C0C52EF2C2C20B900DD0C6F /* ContactInfoView.swift in Sources */,
 				9C5417A62C2453790094DFD4 /* Tabs.swift in Sources */,
 				9C8966002C45A1DF0030478F /* GeometryCellView.swift in Sources */,
+				9C3F4EC12C47FD9100E25205 /* VerificationView.swift in Sources */,
 				9C11C2BF2C17188600F2E691 /* WBAppApp.swift in Sources */,
 				9C14A0442C29A9AF00FD1D48 /* ContactsSearchBarView.swift in Sources */,
 				9C14A0462C29B90A00FD1D48 /* PersonalContactView.swift in Sources */,
