@@ -36,6 +36,9 @@ struct OnboardingView: View {
                         .padding(20)
                 }
             }
+            .navigationDestination(isPresented: $showModal3, destination: {
+                VerificationView()
+            })
         }
     }
 }

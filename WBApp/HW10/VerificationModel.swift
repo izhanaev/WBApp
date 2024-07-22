@@ -8,5 +8,5 @@
 import Foundation
 
 struct VerificationModel {
-    var phoneNumber: String
+    var phoneNumber: String = ""
 }

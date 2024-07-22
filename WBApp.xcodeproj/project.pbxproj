@@ -46,6 +46,9 @@
 		9C8965FC2C4555700030478F /* InfiniteScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8965FB2C4555700030478F /* InfiniteScrollView.swift */; };
 		9C8965FE2C4572C70030478F /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8965FD2C4572C70030478F /* EmojiModel.swift */; };
 		9C8966002C45A1DF0030478F /* GeometryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8965FF2C45A1DF0030478F /* GeometryCellView.swift */; };
+		9C8EE8C92C4EA3F300B459B0 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EE8C82C4EA3F300B459B0 /* UIApplication+.swift */; };
+		9C8EE8CC2C4EAB0700B459B0 /* VerificationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EE8CB2C4EAB0700B459B0 /* VerificationCodeView.swift */; };
+		9C8EE8CE2C4EC41B00B459B0 /* ClockAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EE8CD2C4EC41B00B459B0 /* ClockAnimationView.swift */; };
 		9CD04BD12C36E2FA00688301 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD04BD02C36E2FA00688301 /* WidgetKit.framework */; };
 		9CD04BD32C36E2FA00688301 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD04BD22C36E2FA00688301 /* SwiftUI.framework */; };
 		9CD04BD62C36E2FA00688301 /* WBAppWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD04BD52C36E2FA00688301 /* WBAppWidgetBundle.swift */; };
@@ -126,6 +129,9 @@
 		9C8965FB2C4555700030478F /* InfiniteScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollView.swift; sourceTree = "<group>"; };
 		9C8965FD2C4572C70030478F /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
 		9C8965FF2C45A1DF0030478F /* GeometryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryCellView.swift; sourceTree = "<group>"; };
+		9C8EE8C82C4EA3F300B459B0 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		9C8EE8CB2C4EAB0700B459B0 /* VerificationCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeView.swift; sourceTree = "<group>"; };
+		9C8EE8CD2C4EC41B00B459B0 /* ClockAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockAnimationView.swift; sourceTree = "<group>"; };
 		9CD04BC92C36BF9000688301 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9CD04BCE2C36E2FA00688301 /* WBAppWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WBAppWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD04BD02C36E2FA00688301 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -181,6 +187,8 @@
 		9C11C2BD2C17188600F2E691 /* WBApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C8EE8CA2C4EAAE800B459B0 /* HW11 */,
+				9C8EE8C72C4EA3DA00B459B0 /* Extensions */,
 				9C3F4EBF2C47FD0D00E25205 /* HW10 */,
 				9C40C0EE2C30222900116655 /* Localization */,
 				9C8965F42C454A870030478F /* HW09 */,
@@ -246,6 +254,7 @@
 				9C3F4EC02C47FD9100E25205 /* VerificationView.swift */,
 				9C3F4EC22C4805BD00E25205 /* VerificationEnterNumberView.swift */,
 				9C3F4EC72C4814D300E25205 /* VerificationModel.swift */,
+				9C8EE8CD2C4EC41B00B459B0 /* ClockAnimationView.swift */,
 			);
 			path = HW10;
 			sourceTree = "<group>";
@@ -327,6 +336,22 @@
 				9C8965FD2C4572C70030478F /* EmojiModel.swift */,
 			);
 			path = HW09;
+			sourceTree = "<group>";
+		};
+		9C8EE8C72C4EA3DA00B459B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C8EE8C82C4EA3F300B459B0 /* UIApplication+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C8EE8CA2C4EAAE800B459B0 /* HW11 */ = {
+			isa = PBXGroup;
+			children = (
+				9C8EE8CB2C4EAB0700B459B0 /* VerificationCodeView.swift */,
+			);
+			path = HW11;
 			sourceTree = "<group>";
 		};
 		9CD04BC72C36BF6600688301 /* HW06 */ = {
@@ -481,6 +506,7 @@
 				9C5417BC2C246AE60094DFD4 /* Router.swift in Sources */,
 				9C40C0F82C3050EC00116655 /* OnboardingView.swift in Sources */,
 				9C40C1022C317C5100116655 /* PersonalContactInfoView.swift in Sources */,
+				9C8EE8CE2C4EC41B00B459B0 /* ClockAnimationView.swift in Sources */,
 				9C14A0492C29BAD500FD1D48 /* NavBarCustomName.swift in Sources */,
 				9CD04BE92C36EB2100688301 /* ChatsIntent.swift in Sources */,
 				9C5417BE2C246E9B0094DFD4 /* ContentViewTabView.swift in Sources */,
@@ -493,6 +519,7 @@
 				9C40C0FC2C30512000116655 /* DismissButton.swift in Sources */,
 				9C5417AA2C2464EA0094DFD4 /* ContactsView.swift in Sources */,
 				9C74A3DF2C3432E800F2DB39 /* PersonalContactEditView.swift in Sources */,
+				9C8EE8CC2C4EAB0700B459B0 /* VerificationCodeView.swift in Sources */,
 				9C3F4EC82C4814D300E25205 /* VerificationModel.swift in Sources */,
 				9C14A04B2C29BAE500FD1D48 /* NavBarCustomButton.swift in Sources */,
 				9C5417B92C24697D0094DFD4 /* ContentView.swift in Sources */,
@@ -502,6 +529,7 @@
 				9C0C52EF2C2C20B900DD0C6F /* ContactInfoView.swift in Sources */,
 				9C5417A62C2453790094DFD4 /* Tabs.swift in Sources */,
 				9C8966002C45A1DF0030478F /* GeometryCellView.swift in Sources */,
+				9C8EE8C92C4EA3F300B459B0 /* UIApplication+.swift in Sources */,
 				9C3F4EC12C47FD9100E25205 /* VerificationView.swift in Sources */,
 				9C11C2BF2C17188600F2E691 /* WBAppApp.swift in Sources */,
 				9C14A0442C29A9AF00FD1D48 /* ContactsSearchBarView.swift in Sources */,

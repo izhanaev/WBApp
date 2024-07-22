@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct VerificationView: View {
-    @Binding var contact: VerificationModel
+    @State var contact = VerificationModel()
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         ZStack {
             Color.backgroundWB
                 .edgesIgnoringSafeArea(.all)
+                .onTapGesture {
+                    UIApplication.shared.endEditing(true)
+                }
             
             VStack {
                 Text(NSLocalizedString("enterPhoneNumber", comment: ""))
-                //                .padding(.top, 169)
                     .font(.system(size: 24))
                     .bold()
                     .foregroundStyle(.mainTextWB)
@@ -28,13 +31,40 @@ struct VerificationView: View {
                     .foregroundStyle(.mainTextWB)
                     .frame(width: 293)
                     .lineSpacing(8)
-                VerificationEnterNumberView(contact: $contact)
+                VerificationEnterNumberView(contact: contact)
                     .padding(.top, 49)
+                Button {
+                    
+                } label: {
+                    Text(NSLocalizedString("continue", comment: ""))
+                        .font(.system(size: 16))
+                        .foregroundStyle(.whiteTextWB)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.defaultWB)
+                        .cornerRadius(30)
+                }
+                .padding(.top, 69)
+                .padding(25)
+                ClockAnimationView()
+            }
+        }
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                HStack {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        NavBarCustomButton()
+                    }
+                    NavBarCustomName(titleNavBar: NSLocalizedString("", comment: ""))
+                }
             }
         }
     }
 }
 
 #Preview {
-    VerificationView(contact: .constant( VerificationModel(phoneNumber: "000 000-00-00")))
+    VerificationView(contact: (VerificationModel(phoneNumber: "000 000-00-00")))
 }
