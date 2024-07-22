@@ -12,7 +12,7 @@ struct VerificationCodeView: View {
     
     var body: some View {
         VStack {
-            
+            Text("qwe")
         }
     }
 }
