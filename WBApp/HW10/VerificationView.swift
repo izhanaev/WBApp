@@ -9,6 +9,7 @@ import SwiftUI
 
 struct VerificationView: View {
     @State var contact = VerificationModel()
+    @State private var nextView = false
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -24,7 +25,7 @@ struct VerificationView: View {
                     .font(.system(size: 24))
                     .bold()
                     .foregroundStyle(.mainTextWB)
-                Text(NSLocalizedString("sendCode", comment: ""))
+                Text(NSLocalizedString("willSendCode", comment: ""))
                     .padding(.top, 8)
                     .font(.system(size: 14))
                     .multilineTextAlignment(.center)
@@ -34,7 +35,7 @@ struct VerificationView: View {
                 VerificationEnterNumberView(contact: contact)
                     .padding(.top, 49)
                 Button {
-                    
+                    nextView = true
                 } label: {
                     Text(NSLocalizedString("continue", comment: ""))
                         .font(.system(size: 16))
@@ -62,9 +63,12 @@ struct VerificationView: View {
                 }
             }
         }
+        .navigationDestination(isPresented: $nextView, destination: {
+            VerificationCodeView()
+        })
     }
 }
 
 #Preview {
-    VerificationView(contact: (VerificationModel(phoneNumber: "000 000-00-00")))
+    VerificationView()
 }
