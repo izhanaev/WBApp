@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import UISystem
+
 struct PersonalContactView: View {
     let contact: ContactModel
     @Environment(\.presentationMode) var presentationMode
@@ -28,9 +30,9 @@ struct PersonalContactView: View {
                                 Button(action: {
                                     self.presentationMode.wrappedValue.dismiss()
                                 }) {
-                                    NavBarCustomButton()
+                                    NavBarCustomButton(bgColor: .mainTextWB)
                                 }
-                                NavBarCustomName(titleNavBar: NSLocalizedString("profile", comment: ""))
+                                NavBarCustomName(titleNavBar: NSLocalizedString("profile", comment: ""), bgColor: .mainTextWB)
                             }
                         }
                         ToolbarItem(placement: .navigationBarTrailing) {
