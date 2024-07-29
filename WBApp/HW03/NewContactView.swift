@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct NewContactView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -21,9 +22,9 @@ struct NewContactView: View {
                         Button(action: {
                             self.presentationMode.wrappedValue.dismiss()
                         }) {
-                            NavBarCustomButton()
+                            NavBarCustomButton(bgColor: .mainTextWB)
                         }
-                        NavBarCustomName(titleNavBar: NSLocalizedString("newContact", comment: ""))
+                        NavBarCustomName(titleNavBar: NSLocalizedString("newContact", comment: ""), bgColor: .mainTextWB)
                     }
                 }
             }

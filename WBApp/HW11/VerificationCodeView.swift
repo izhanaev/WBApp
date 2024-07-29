@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct VerificationCodeView: View {
     @State var contact = VerificationModel()
@@ -51,9 +52,9 @@ struct VerificationCodeView: View {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
-                        NavBarCustomButton()
+                        NavBarCustomButton(bgColor: .mainTextWB)
                     }
-                    NavBarCustomName(titleNavBar: NSLocalizedString("", comment: ""))
+                    NavBarCustomName(titleNavBar: NSLocalizedString("", comment: ""), bgColor: .mainTextWB)
                 }
             }
         }
