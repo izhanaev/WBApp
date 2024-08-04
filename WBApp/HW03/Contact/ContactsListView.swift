@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct ContactsListView: View {
     
@@ -14,7 +15,7 @@ struct ContactsListView: View {
     
     var body: some View {
         VStack {
-            ContactsSearchBarView(contactSearch: $contactSearch)
+            SearchBarView(contactSearch: $contactSearch, bgColor: .grayWB, bgColorBar: .barBackgroundWB)
                 .padding(.horizontal)
             
             List {
