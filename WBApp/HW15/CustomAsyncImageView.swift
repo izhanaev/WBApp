@@ -8,15 +8,27 @@
 import SwiftUI
 
 struct CustomAsyncImageView: View {
+    @StateObject private var loader: AsyncLoaderImage
+    let placeholder: Image
     
-    let url: URL?
-    
-    init(url: URL?) {
-        self.url = url
+    init(url: URL?, placeholder: Image = Image(systemName: "photo")) {
+        _loader = StateObject(wrappedValue: AsyncLoaderImage(url: url))
+        self.placeholder = placeholder
     }
-    // TODO: 
+    
     var body: some View {
-        Text("")
+        Group {
+            if let image = loader.image {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+            } else {
+                placeholder
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.gray)
+            }
+        }
     }
 }
 
