@@ -25,7 +25,7 @@ struct CustomAsyncImageView: View {
             } else {
                 placeholder
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .aspectRatio(contentMode: .fill)
                     .foregroundColor(.gray)
             }
         }
