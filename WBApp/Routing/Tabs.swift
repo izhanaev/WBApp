@@ -10,6 +10,7 @@ import Foundation
 enum Tabs: Hashable {
     case contacts
     case chats
+    case news
     case more
 }
 

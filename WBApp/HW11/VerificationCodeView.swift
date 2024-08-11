@@ -11,6 +11,7 @@ import UISystem
 struct VerificationCodeView: View {
     @State var contact = VerificationModel()
     @Environment(\.presentationMode) var presentationMode
+    @Binding var isFullScreenPresented: Bool
     
     var body: some View {
         ZStack {
@@ -32,7 +33,7 @@ struct VerificationCodeView: View {
                     .foregroundStyle(.mainTextWB)
                 VerificationPromptView(contact: $contact.code, numberOfCircles: 4)
                     .padding(.top, 49)
-                CodeView(contact: $contact)
+                CodeView(contact: $contact, isFullScreenPresented: $isFullScreenPresented)
                 Button {
                     
                 } label: {
@@ -62,5 +63,5 @@ struct VerificationCodeView: View {
 }
 
 #Preview {
-    VerificationCodeView()
+    VerificationCodeView(isFullScreenPresented: .constant(true))
 }

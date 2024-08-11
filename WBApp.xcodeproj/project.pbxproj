@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C06EB852C5BEA0F009953C0 /* CustomAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EB842C5BEA0F009953C0 /* CustomAsyncImageView.swift */; };
 		9C06EB872C5BF06E009953C0 /* AsyncLoaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06EB862C5BF06E009953C0 /* AsyncLoaderImage.swift */; };
+		9C0927042C6935F4006832A4 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0927032C6935F4006832A4 /* AuthRouter.swift */; };
 		9C0C52EB2C2AEA1300DD0C6F /* ContactCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C52EA2C2AEA1300DD0C6F /* ContactCellView.swift */; };
 		9C0C52ED2C2C1E4800DD0C6F /* ContactAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C52EC2C2C1E4800DD0C6F /* ContactAvatarView.swift */; };
 		9C0C52EF2C2C20B900DD0C6F /* ContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C52EE2C2C20B900DD0C6F /* ContactInfoView.swift */; };
@@ -17,6 +18,7 @@
 		9C14A0422C299FB900FD1D48 /* ContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14A0412C299FB900FD1D48 /* ContactsListView.swift */; };
 		9C14A0462C29B90A00FD1D48 /* PersonalContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14A0452C29B90A00FD1D48 /* PersonalContactView.swift */; };
 		9C14A04D2C29BE6E00FD1D48 /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14A04C2C29BE6E00FD1D48 /* NewContactView.swift */; };
+		9C374C4A2C665B2E00ABD277 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C374C492C665B2E00ABD277 /* NewsView.swift */; };
 		9C3F4EBA2C47ECA800E25205 /* EmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F4EB92C47ECA800E25205 /* EmojiViewModel.swift */; };
 		9C3F4EBE2C47ECDC00E25205 /* EmojiCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F4EBD2C47ECDC00E25205 /* EmojiCellView.swift */; };
 		9C3F4EC12C47FD9100E25205 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F4EC02C47FD9100E25205 /* VerificationView.swift */; };
@@ -95,6 +97,7 @@
 /* Begin PBXFileReference section */
 		9C06EB842C5BEA0F009953C0 /* CustomAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImageView.swift; sourceTree = "<group>"; };
 		9C06EB862C5BF06E009953C0 /* AsyncLoaderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLoaderImage.swift; sourceTree = "<group>"; };
+		9C0927032C6935F4006832A4 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
 		9C0C52EA2C2AEA1300DD0C6F /* ContactCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellView.swift; sourceTree = "<group>"; };
 		9C0C52EC2C2C1E4800DD0C6F /* ContactAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAvatarView.swift; sourceTree = "<group>"; };
 		9C0C52EE2C2C20B900DD0C6F /* ContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoView.swift; sourceTree = "<group>"; };
@@ -104,6 +107,7 @@
 		9C14A0412C299FB900FD1D48 /* ContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListView.swift; sourceTree = "<group>"; };
 		9C14A0452C29B90A00FD1D48 /* PersonalContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactView.swift; sourceTree = "<group>"; };
 		9C14A04C2C29BE6E00FD1D48 /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
+		9C374C492C665B2E00ABD277 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		9C3F4EB92C47ECA800E25205 /* EmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewModel.swift; sourceTree = "<group>"; };
 		9C3F4EBD2C47ECDC00E25205 /* EmojiCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCellView.swift; sourceTree = "<group>"; };
 		9C3F4EC02C47FD9100E25205 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 		9C11C2BD2C17188600F2E691 /* WBApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C374C482C665A9700ABD277 /* HW17 */,
 				9C06EB7F2C5BC940009953C0 /* HW15 */,
 				9CA69EEC2C58026C0072ADD7 /* UISystem */,
 				9C793D9B2C5117B50004FE17 /* HW12 */,
@@ -260,6 +265,14 @@
 				9C5417C12C2470620094DFD4 /* MoreView.swift */,
 			);
 			path = HW03;
+			sourceTree = "<group>";
+		};
+		9C374C482C665A9700ABD277 /* HW17 */ = {
+			isa = PBXGroup;
+			children = (
+				9C374C492C665B2E00ABD277 /* NewsView.swift */,
+			);
+			path = HW17;
 			sourceTree = "<group>";
 		};
 		9C3F4EBF2C47FD0D00E25205 /* HW10 */ = {
@@ -319,6 +332,7 @@
 			children = (
 				9C5417A52C2453790094DFD4 /* Tabs.swift */,
 				9C5417BB2C246AE60094DFD4 /* Router.swift */,
+				9C0927032C6935F4006832A4 /* AuthRouter.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -529,6 +543,7 @@
 				9C8965FE2C4572C70030478F /* EmojiModel.swift in Sources */,
 				9C14A04D2C29BE6E00FD1D48 /* NewContactView.swift in Sources */,
 				9C440E302C50182A00E82AF7 /* CustomOperator%%.swift in Sources */,
+				9C374C4A2C665B2E00ABD277 /* NewsView.swift in Sources */,
 				9C40C1062C31B79300116655 /* PersonalContactSocButtonListView.swift in Sources */,
 				9C5417C02C24704D0094DFD4 /* ChatsView.swift in Sources */,
 				9C0C52EB2C2AEA1300DD0C6F /* ContactCellView.swift in Sources */,
@@ -565,6 +580,7 @@
 				9C5417A62C2453790094DFD4 /* Tabs.swift in Sources */,
 				9C8966002C45A1DF0030478F /* GeometryCellView.swift in Sources */,
 				9C8EE8C92C4EA3F300B459B0 /* UIApplication+.swift in Sources */,
+				9C0927042C6935F4006832A4 /* AuthRouter.swift in Sources */,
 				9C3F4EC12C47FD9100E25205 /* VerificationView.swift in Sources */,
 				9C793D9E2C5118D90004FE17 /* HashFunction.swift in Sources */,
 				9C11C2BF2C17188600F2E691 /* WBAppApp.swift in Sources */,

@@ -10,6 +10,7 @@ import SwiftUI
 struct CodeView: View {
     @Binding var contact: VerificationModel
     @FocusState private var isTextFieldFocused: Bool
+    @Binding var isFullScreenPresented: Bool
     
     var body: some View {
         ZStack {
@@ -26,11 +27,14 @@ struct CodeView: View {
                     if contact.code != formatted {
                         contact.code = formatted
                     }
+                    if contact.code == "1111" {
+                        isFullScreenPresented = false
+                    }
                 }
         }
     }
 }
 
 #Preview {
-    CodeView(contact: .constant(VerificationModel()))
+    CodeView(contact: .constant(VerificationModel()), isFullScreenPresented: .constant(true))
 }

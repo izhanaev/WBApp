@@ -18,6 +18,7 @@ struct ContentViewTabView: View {
         TabView(selection: $router.selectedTab) {
             tabView(tab: .contacts, imageName: "ContactsTab", view: ContactsView())
             tabView(tab: .chats, imageName: "ChatsTab", view: ChatsView())
+            tabView(tab: .news, imageName: "NewsTab", view: NewsView())
             tabView(tab: .more, imageName: "MoreTab", view: MoreView())
         }
             .tint(.monoDefaultWB)

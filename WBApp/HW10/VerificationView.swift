@@ -11,6 +11,7 @@ import UISystem
 struct VerificationView: View {
     @State var contact = VerificationModel()
     @State private var nextView = false
+    @Binding var isFullScreenPresented: Bool
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -65,11 +66,11 @@ struct VerificationView: View {
             }
         }
         .navigationDestination(isPresented: $nextView, destination: {
-            VerificationCodeView()
+            VerificationCodeView(isFullScreenPresented: $isFullScreenPresented)
         })
     }
 }
 
 #Preview {
-    VerificationView()
+    VerificationView(isFullScreenPresented: .constant(true))
 }
