@@ -39,10 +39,13 @@ struct WBAppWidgetEntryView : View {
     }
     @ViewBuilder
     private var avatarView: some View {
-        if let avatar = contact.avatar {
-            Image(uiImage: UIImage(named: avatar) ?? UIImage())
-                .resizable()
+        if let avatarURL = contact.avatar {
+            AsyncImage(url: avatarURL) { image in
+                image.resizable()
                 .aspectRatio(contentMode: .fill)
+            } placeholder: {
+                ProgressView()
+            }
         }
     }
 }

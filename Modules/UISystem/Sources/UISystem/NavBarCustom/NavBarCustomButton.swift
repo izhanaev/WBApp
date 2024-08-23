@@ -7,16 +7,23 @@
 
 import SwiftUI
 
-struct NavBarCustomButton: View {
-    var body: some View {
+public struct NavBarCustomButton: View {
+    
+    public var bgColor: Color
+    
+    public init(bgColor: Color) {
+        self.bgColor = bgColor
+    }
+    
+    public var body: some View {
         Image(systemName: "chevron.left")
             .resizable()
             .frame(width: 7.42, height: 12.02)
-            .foregroundStyle(.mainTextWB)
+            .foregroundStyle(bgColor)
             .bold()
     }
 }
 
 #Preview {
-    NavBarCustomButton()
+    NavBarCustomButton(bgColor: .black)
 }

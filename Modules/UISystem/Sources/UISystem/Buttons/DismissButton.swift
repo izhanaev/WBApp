@@ -7,10 +7,12 @@
 
 import SwiftUI
 
-struct DismissButton: View {
+public struct DismissButton: View {
     @Environment(\.presentationMode) var presentationMode
+    
+    public init() {}
 
-    var body: some View {
+    public var body: some View {
         Button {
             presentationMode.wrappedValue.dismiss()
         } label: {
@@ -19,10 +21,8 @@ struct DismissButton: View {
     }
 }
 
-struct DismissButton_Previews: PreviewProvider {
-    static var previews: some View {
-        DismissButton()
-    }
+#Preview {
+    DismissButton()
 }
 
 

@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct VerificationView: View {
     @State var contact = VerificationModel()
     @State private var nextView = false
+    @Binding var isFullScreenPresented: Bool
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -57,18 +59,18 @@ struct VerificationView: View {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
-                        NavBarCustomButton()
+                        NavBarCustomButton(bgColor: .mainTextWB)
                     }
-                    NavBarCustomName(titleNavBar: NSLocalizedString("", comment: ""))
+                    NavBarCustomName(titleNavBar: NSLocalizedString("", comment: ""), bgColor: .mainTextWB)
                 }
             }
         }
         .navigationDestination(isPresented: $nextView, destination: {
-            VerificationCodeView()
+            VerificationCodeView(isFullScreenPresented: $isFullScreenPresented)
         })
     }
 }
 
 #Preview {
-    VerificationView()
+    VerificationView(isFullScreenPresented: .constant(true))
 }

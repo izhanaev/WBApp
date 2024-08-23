@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct ContactsView: View {
     
@@ -20,7 +21,7 @@ struct ContactsView: View {
                     .padding(.top, 12)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarLeading) {
-                            NavBarCustomName(titleNavBar: NSLocalizedString("contacts", comment: ""))
+                            NavBarCustomName(titleNavBar: NSLocalizedString("contacts", comment: ""), bgColor: .mainTextWB)
                         }
                         ToolbarItem(placement: .navigationBarTrailing) {
                             NavigationLink(destination: NewContactView()) {

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct OnboardingButtons: View {
     @Binding var showModal1: Bool
