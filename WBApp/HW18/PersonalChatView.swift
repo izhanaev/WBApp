@@ -10,11 +10,21 @@ import ExyteChat
 import ExyteMediaPicker
 
 struct PersonalChatView: View {
+    
+    // TODO:
+    
+    @EnvironmentObject var viewModel: ChatExampleViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ChatView(messages: viewModel.messages) { draft in
+            viewModel.send(draft: draft)
+        }
+        .environmentObject(viewModel)
     }
+        
 }
 
 #Preview {
     PersonalChatView()
+        .environmentObject(ChatExampleViewModel())
 }
